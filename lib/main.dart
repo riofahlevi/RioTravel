@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:travelapp_bwa/ui/pages/bonus_pages.dart';
+import 'package:travelapp_bwa/ui/pages/sign_up_page.dart';
 import 'package:travelapp_bwa/ui/pages/splash_pages.dart';
 // ignore: unused_import
 import 'ui/pages/get_started_pages.dart';
@@ -12,11 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashPage(),
-      // routes: {
-      //   '/': (context) => SplashPage(),
-      //   '/get-started': (context) => GetStartedPage(),
-      // },
+      // home: SplashPage(),
+      routes: {
+        '/': (context) => SplashPage(),
+        '/get-started': (context) => GetStartedPage(),
+        '/sign-up': (context) => SignUpPage(),
+        '/bonus-page': (context) => BonusPage(),
+      },
     );
   }
 }

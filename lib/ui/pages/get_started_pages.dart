@@ -5,9 +5,14 @@ import '../../shared/theme.dart';
 import 'package:travelapp_bwa/ui/pages/splash_pages.dart';
 import 'dart:async';
 
-class GetStartedPage extends StatelessWidget {
+class GetStartedPage extends StatefulWidget {
   const GetStartedPage({Key? key}) : super(key: key);
 
+  @override
+  State<GetStartedPage> createState() => _GetStartedPageState();
+}
+
+class _GetStartedPageState extends State<GetStartedPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,11 +54,14 @@ class GetStartedPage extends StatelessWidget {
                   height: 55,
                   margin: EdgeInsets.only(top: 50, bottom: 80),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/sign-up');
+                    },
                     style: TextButton.styleFrom(
                         backgroundColor: kPrimaryColor,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(17))),
+                            borderRadius:
+                                BorderRadius.circular(defaultRadius))),
                     child: Text("Get Started",
                         style: whiteTextStyle.copyWith(
                             fontSize: 18, fontWeight: medium)),

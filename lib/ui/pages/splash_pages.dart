@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:travelapp_bwa/ui/pages/get_started_pages.dart';
@@ -13,15 +15,10 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    // TODO: implement initState
-    Future.delayed(const Duration(seconds: 2), () {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => GetStartedPage(),
-          ));
-    });
     super.initState();
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushNamed(context, '/get-started');
+    });
   }
 
   @override
