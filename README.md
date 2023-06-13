@@ -1,5 +1,5 @@
 # Airplane
-Airplane adalah sebuah aplikasi perjalan pesawat yang memudahkan pengguna untuk mencari objek wisata dan memesan tiket pesawat untuk liburan
+Airplane adalah sebuah aplikasi perjalanan pesawat yang memudahkan pengguna untuk mencari objek wisata dan memesan tiket pesawat untuk liburan
 
 
 ![mockup_airplane](https://github.com/riofahlevi/airplane/assets/34447144/744767ed-786b-4f46-9fcf-c41be0beca1a)
@@ -16,9 +16,8 @@ Airplane adalah sebuah aplikasi perjalan pesawat yang memudahkan pengguna untuk 
  5. E-Wallet.
 
 # Implementation
- 1. MVC Architecture
- 2. State Management Bloc with Cubit
- 3. Firebase
+ 1. State Management Bloc with Cubit
+ 2. Firebase
 
 # Dependecies
 Dependencies
