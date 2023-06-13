@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:travelapp_bwa/ui/pages/widgets/custom_button.dart';
 import '../../shared/theme.dart';
 import 'package:travelapp_bwa/ui/pages/splash_pages.dart';
 import 'dart:async';
@@ -22,9 +23,10 @@ class _GetStartedPageState extends State<GetStartedPage> {
             width: double.infinity,
             height: double.infinity,
             decoration: const BoxDecoration(
-              image: const DecorationImage(
-                  image: const AssetImage('assets/image_get_started.png'),
-                  fit: BoxFit.cover),
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage('assets/image_get_started.png'),
+              ),
             ),
           ),
           Center(
@@ -38,7 +40,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
                     fontWeight: semibold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Text(
@@ -49,24 +51,13 @@ class _GetStartedPageState extends State<GetStartedPage> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Container(
-                  width: 220,
-                  height: 55,
-                  margin: EdgeInsets.only(top: 50, bottom: 80),
-                  child: TextButton(
+                CustomButton(
+                    title: 'Get Started',
+                    width: 220,
+                    margin: const EdgeInsets.only(bottom: 80, top: 50),
                     onPressed: () {
                       Navigator.pushNamed(context, '/sign-up');
-                    },
-                    style: TextButton.styleFrom(
-                        backgroundColor: kPrimaryColor,
-                        shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.circular(defaultRadius))),
-                    child: Text("Get Started",
-                        style: whiteTextStyle.copyWith(
-                            fontSize: 18, fontWeight: medium)),
-                  ),
-                ),
+                    }),
               ],
             ),
           )

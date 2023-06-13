@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "572783076013",
+    "project_id": "flutterdevrio",
+    "storage_bucket": "flutterdevrio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572783076013:android:67b7f1449ddc755249dc24",
+        "android_client_info": {
+          "package_name": "com.example.sanber_app_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572783076013-jle0omulqltoa7st7u46hv5kdmb79kch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4woXXtbwGiy92djBOU_Y8Rf2vliYp6ig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572783076013-jle0omulqltoa7st7u46hv5kdmb79kch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572783076013:android:707119884237669a49dc24",
+        "android_client_info": {
+          "package_name": "com.flutterdevrio.travelapp_bwa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572783076013-jle0omulqltoa7st7u46hv5kdmb79kch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4woXXtbwGiy92djBOU_Y8Rf2vliYp6ig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572783076013-jle0omulqltoa7st7u46hv5kdmb79kch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
